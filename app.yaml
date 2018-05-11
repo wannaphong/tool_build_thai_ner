@@ -1,0 +1,10 @@
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /css
+  secure: always
+  static_dir: css
+- url: /.*
+  secure: always
+  script: helloworld.php
